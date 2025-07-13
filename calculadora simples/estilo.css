@@ -1,0 +1,69 @@
+body {
+    background-image: url(assets/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.calculator {
+    background-color: rgb(189, 37, 95);
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#result {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color:rgb(247, 178, 155);
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button.operator {
+    background-color: rgb(223, 113, 144);
+    color: #fff
+}
+
+button.clear {
+    background-color: rgb(235, 119, 61);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(255, 178, 148);
+}
+
+button:active {
+    transform: scale(0.98);
+}
